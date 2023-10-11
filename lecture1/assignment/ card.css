@@ -13,6 +13,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Roboto';
 }
 
 .rec{
@@ -35,7 +36,8 @@ body{
 
 .main{
     width:430px;
-    height:500px;
+    display: flex;
+    flex-direction: column;
 }
 
 .pfp{
@@ -49,4 +51,55 @@ img{
     height:200px;
     border-radius: 50%;
     border: 6px solid #ddd;
+}
+
+.middle{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+width:80%;
+margin-left:10%;
+}
+
+.text{
+    font-size: 36px !important;
+    margin: 10px 0;
+}
+
+.name{
+    color: #08aeac;
+}
+
+.field{
+    margin-top: 0;
+    font-weight: bold;
+}
+
+.line2{
+    border: none;
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: linear-gradient(90deg, rgba(224,224,226,1) 0%, rgba(0,0,0,1) 50%, rgba(224,224,226,1) 100%);
+}
+
+.aboutMe{
+    text-align: center;
+    font-size:15px;
+}
+
+.contact{
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 10px;
+    background-repeat:no-repeat;
+    background-color:#08aeac;
+    color:white;
+    transition: 0.6s;
+}
+
+.contact:hover{
+    background-color:red;
 }
