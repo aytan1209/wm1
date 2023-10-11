@@ -4,92 +4,121 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: antiquewhite;
-    width:100%;
-    height:fit-content;
+    width: 100%;
+    height: fit-content;
 }
 
-.top{
-    margin-top:20px;
-    width:60%;
-    margin-left:20%;
-    display:flex;
+.top {
+    margin-top: 5%;
+    margin-left: 20%;
+    width: 60%;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
 }
 
-img{
-    width:220px;
-    height:240px;
+img {
+    width: 220px;
+    height: 240px;
     border-radius: 50%;
-   
+
 }
 
-img:hover{
-    width:250px;
-    height:270px;
-    border:3px dotted red;  /*yoxla bunu*/
+img:hover {
+    width: 250px;
+    height: 270px;
+    border: 3px dotted red;
+    /*yoxla bunu*/
 }
 
-.text{
-    margin-left:20px;
+.text {
+    margin-left: 20px;
 }
 
-h2{
+h2 {
     font-family: 'IBM Plex Mono', monospace;
     font-size: 25px;
-    color:brown;
+    color: brown;
 }
 
-p{
-    text-decoration:dashed;
-    margin-top:10px;
+p {
+    text-decoration: dashed;
+    margin-top: 10px;
 }
 
-.line{
-    width:60%;
-    margin-left:20%;
-    margin-top:20px;
+.line {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 20px;
     /* height:5px; */
     border: 3px dashed green;
 }
 
-table{
-    width:60%;
-    margin-left:20%;
+table {
+    width: 60%;
+    margin-left: 20%;
 }
 
 
-.title, .education{
+.title,
+.education {
     font-size: 20px;
-    background-color:chocolate;
+    background-color: chocolate;
     font-family: 'IBM Plex Mono', monospace;
     text-align: center;
 }
 
-a{
+a {
     text-decoration: underline;
-    color:darkblue;
+    color: darkblue;
     background-color: powderblue;
 }
 
-.dkdk{
-    margin-top:30px;
+.dkdk {
+    margin-top: 30px;
 }
 
-.edu_level{
-    margin-top:30px;
+.edu_level {
+    margin-top: 30px;
 }
 
-.edu_place{
-    width:20%;
+.edu_place {
+    width: 20%;
     font-size: 20px;
     background-color: darkgreen;
-    color:#fff;
+    color: #fff;
     text-align: center;
 }
 
 
+.navbar {
+    width:100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    justify-content: space-evenly;
+}
 
+.navbarList {
+    width:33.33%;
+    float: left;
+}
+
+.navbarList a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarList a:hover {
+    background-color: #111;
+    color:white;
+}
