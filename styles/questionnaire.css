@@ -78,8 +78,9 @@ button:focus {
 }
 
 .active{
-    background-color: #111;
-    color:white;
+    background-color: #111 !important;
+    color: #ffffff !important;
+    height: 55px !important;
 }
 
 label, input, span, textarea, button{
