@@ -5,37 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-
-button{
-    height:50px;
-    width:100px;
-    background-color: black;
-    color:white;
-    border:none;
-}
-
-button:focus{
-    background-color: white;
-    color:black;
-}
-
-body{
-    width:80%;
-    background-color: antiquewhite;
-}
-
-.title{
-    font-size: 30px;
-}
-    </style>
-  
+    <link rel="stylesheet" href="../styles/questionnaire.css">
 </head>
 
 <body>
+
+    <ul class="navbar">
+        <li class="navbarList"><a href="../index.html">HOME</a></li>
+        <li class="navbarList"><a  href="https://github.com/novruzluaytan">GITHUB ACCOUNT</a></li>
+        <li class="navbarList"><a href="https://github.com/novruzluaytan/web-and-mobile">GITHUB PAGE</a></li>
+        <li class="navbarList"><a href="../assignment/card.html">PERSONAL DIGITAL CARD </a></li>
+        <li class="navbarList"><a href="./education.html">EDUCATION</a></li>
+        <li class="navbarList"><a class="active" href="./questionnaire.html">QUESTIONNAIRE</a></li>
+    </ul>
     <form>
         <p class="title">Please answer questions ✨</p>
-   
+        
         <fieldset>
             <legend><b><i>Information about you:</i></b></legend>
             <br>
@@ -52,15 +37,14 @@ body{
             <br>
             <br>
 
-            Gender:
+            <span>Gender:</span>
             <br>
             <input type="radio" id="male" name="gender">
             <label for="male">Male</label><br>
             <input type="radio" id="female" name="gender">
             <label for="female">female</label><br>
             <br>
-
-            Languages:
+            <span>Languages:</span>
             <br>
             <input type="checkbox" id="aze">
             <label for="aze">Azerbaijani</label><br>

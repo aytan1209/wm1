@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body {
+    width: 100%;
+    background-color: antiquewhite;
+}
+
+form {
+    margin-top: 5%;
+    width:80%;
+    margin-left:5%;
+}
+
+legend{
+    margin-left:10px;
+    font-size: 18px;
+}
+
+fieldset{
+    height:700px;
+    margin-top:5%;
+}
+
+button {
+    height: 50px;
+    width: 100px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+button:focus {
+    background-color: white;
+    color: black;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.navbar {
+    width: 100%;
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: space-evenly;
+    position: absolute;
+    left:0;
+    top: 0;
+    position: fixed;
+}
+
+.navbarList {
+    width: 16.66%;
+    float: left;
+    background-color: chocolate;
+}
+
+.navbarList a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbarList a:hover {
+    background-color: #111;
+    color: white;
+    height: 55px;
+    font-size: 17px;
+}
+
+.active{
+    background-color: #111;
+    color:white;
+}
+
+label, input, span, textarea, button{
+    margin-left:15px;
+}

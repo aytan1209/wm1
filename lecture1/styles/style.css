@@ -20,14 +20,14 @@ body {
     justify-content: center;
 }
 
-img {
+.pfp {
     width: 220px;
     height: 240px;
     border-radius: 50%;
 
 }
 
-img:hover {
+.pfp:hover {
     width: 250px;
     height: 270px;
     border: 3px dotted red;
@@ -57,23 +57,93 @@ p {
     border: 3px dashed green;
 }
 
-table {
-    width: 60%;
-    margin-left: 20%;
+.grid-container {
+    width:60%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    background-color: rgba(33,150,243, 0.3);
+    padding: 10px;
+    margin-left:20%;
+    grid-auto-flow: column;
+    overflow-y: hidden; 
+    overflow-x: auto; 
 }
 
 
-.title,
-.education {
+  .grid-item {
+    padding: 20px;
+    text-align: center;
+    width:25%;
+  }
+
+  .grid-item:hover .img1{
+ 
+        transform: scale(1.08);
+      
+  }
+
+
+  .img1{
+    width:200px;
+    height:200px;
+  }
+
+.main{
+    display: flex;
+    flex-direction: column;
+    row-gap:30px;
+    margin-top:5%;
+}
+
+.top_row{
+display: flex;
+flex-direction: row;
+width:70%;
+margin-left:8%;
+}
+
+.row{
+    width:60%;
+    margin-left:20%;
+}
+
+.description{
+    margin-top:5%;
+    margin-left:5%;
+    font-size:20px;
+}
+
+
+.title{
+    height:40px;
     font-size: 20px;
     background-color: chocolate;
     font-family: 'IBM Plex Mono', monospace;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-a {
+.education{
+    margin-top:10%;
+    height:40px;
+    font-size: 20px;
+    background-color: chocolate;
+    font-family: 'IBM Plex Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mail{
+    color:black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.mail:hover{
+    color:darkblue;
     text-decoration: underline;
-    color: darkblue;
     background-color: powderblue;
 }
 
@@ -82,30 +152,73 @@ a {
 }
 
 .edu_level {
-    margin-top: 30px;
-}
-
-.edu_place {
-    width: 20%;
-    font-size: 20px;
-    background-color: darkgreen;
-    color: #fff;
+    margin-top: 10%;
+    list-style-type:none;
     text-align: center;
 }
 
+.edu_place {
+    margin-top:10%;
+    width: 80%;
+    height:40px;
+    font-size: 23px;
+    background-color: darkgreen;
+    color: #fff;
+    text-align: center;
+    margin-left:10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.edu1{
+    width: 27%;
+    height:200px;
+    position: absolute;
+    left:72.5%;
+    top:15%;
+    background-color:rgba(33,150,243, 0.3);;
+}
+
+.edu2{
+    width: 30%;
+    height:200px;
+    position: absolute;
+    left:36%;
+    top:40%;
+    background-color:rgba(33,150,243, 0.3);;
+}
+
+.edu3{
+    width: 30%;
+    height:200px;
+    position: absolute;
+    left:5px;
+    top:65%;
+    background-color:rgba(33,150,243, 0.3);;
+}
+
+.texts{
+    margin-left:5px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
 
 .navbar {
     width:100%;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     justify-content: space-evenly;
+    position: absolute;
+    top:0;
+    position: fixed;
+    overflow: hidden;
 }
 
 .navbarList {
-    width:33.33%;
+    width:16.66%;
     float: left;
+    background-color: chocolate;
 }
 
 .navbarList a {
@@ -121,4 +234,36 @@ a {
 .navbarList a:hover {
     background-color: #111;
     color:white;
+    height: 55px;
+    font-size: 16px;
+}
+
+.active{
+    background-color: #111;
+    color:white;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+    .navbarList {
+      width: 100%;
+    }
+
+    .pfp{
+        margin-top:100%;
+    }
+
+    .text{
+        margin-top:50%;
+    }
+
+    .top_row{
+        flex-direction: column;
+        margin-left:15%;
+    }
+
+    .title{
+        margin-top:5%;
+    }
 }
